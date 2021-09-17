@@ -4,7 +4,13 @@ html {
 
 body {
     font: 400 #15px/1.5 'Noto Sans', serif;
-    backgroud-color: #fdfdfd
+    backgroud-color: #fdfdfd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal
     padding-top: 60px;
     height:100%;
 }
@@ -75,8 +81,10 @@ body {
 
 /* post style */
 .article {
-    font-size: 17px;
+    font: 400 #15px/#1.5 "Noto Sans", serif;
+    font-size: 15px;
     color: $article-color;
+    backgroud-color: #fbfbfb
 }
 
 .article img {
