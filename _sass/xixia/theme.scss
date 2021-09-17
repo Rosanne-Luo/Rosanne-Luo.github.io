@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font: 400 #15px/1.5 'Noto Sans', serif;
+    font:'Noto Sans', serif;
     backgroud-color: #FDFDFD;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -81,7 +81,7 @@ body {
 
 /* post style */
 .article {
-    font: 400 #15px/#1.5 "Noto Sans", serif;
+    font: "Noto Sans", serif;
     font-size: 15px;
     color: $article-color;
     backgroud-color: #FDFDFD
