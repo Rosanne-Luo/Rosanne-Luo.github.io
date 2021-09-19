@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "为什么要做股票投资"
-categories: 投资理财
-tags: 股票
-author: July
+title: "为什么要做股票投资"
+subtitle: ""
+date: 2021-05-18
+author: 七月
+category: 投资理财
+tags: 心得感悟
+finished: true
 ---
 
 2021年上半年股市比较动荡，每次当股市大跌时，为了鼓励自己坚持下去，就会思考自己为什么要投资股票，又为什么要现在投资股票？

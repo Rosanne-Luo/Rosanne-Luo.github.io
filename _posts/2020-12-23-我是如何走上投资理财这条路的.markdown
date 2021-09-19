@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "我是如何走上投资理财这条路的"
-categories: 投资理财
-tags: 股票
-author: July
+date: 2020-12-23
+author: 七月
+category: 投资理财
+tags: 心得感悟
+finished: true
 ---
 
 从第一次开始投资理财到现在已经三四年了，忽然想记录一下当初自己为什么会开始投资理财。

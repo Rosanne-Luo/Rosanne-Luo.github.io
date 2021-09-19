@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "当前经济环境下我的投资心态"
-categories: 投资理财
-tags: 股票
-author: July
+subtitle: ""
+date: 2021-05-12
+author: 七月
+category: 投资理财
+tags: 心得感悟
+finished: true
 ---
 
 2021年春节过后股市行情一路下滑，上证指数从3700点下滑至当前的3400点，跌幅10%。抱团股的跌幅更大，很多大白马的股票跌幅甚至高达40%~50%，股市行情持续走低，一片哀嚎。

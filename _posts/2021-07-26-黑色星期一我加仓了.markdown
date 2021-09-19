@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "黑色星期一，我加仓了"
-categories: 投资理财
-tags: 股票
-author: July
+title: "黑色星期一，我加仓了"
+subtitle: ""
+date: 2021-07-26
+author: 七月
+category: 投资理财
+tags: 心得感悟
+finished: true
 ---
 
 继上周五大跌之后，今天迎来了黑色星期一。上证指数下跌了2.34%，深证成指下跌了2.65%，创业板指数下跌了2.84%。在这样的市场行情下，我选择了加仓，这是最后的子弹，意味着从今天开始只能选择装死了。

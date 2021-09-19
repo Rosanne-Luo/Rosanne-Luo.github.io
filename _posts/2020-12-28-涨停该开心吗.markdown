@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "涨停该开心吗"
-categories: 投资理财
-tags: 股票
-author: July
+title: "涨停该开心吗"
+subtitle: ""
+date: 2020-12-28
+author: 七月
+category: 投资理财
+tags: 心得感悟
+finished: true
 ---
 
 最近持仓的一只股票涨停了，这好像该是一件值得开心的事情，可是我却并没有，究其原因是虽然涨停，可是整体收益并不高，而且仓位本身就不重，现在又不准备卖出，所以觉得并没有什么值得开心的事情。
