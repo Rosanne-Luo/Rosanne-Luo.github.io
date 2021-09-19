@@ -5,7 +5,7 @@ subtitle: ""
 date: 2021-09-15
 author: 七月
 category: 投资理财
-tags: 个股
+tags: 个股 白色家电
 finished: true
 ---
 
