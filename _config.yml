@@ -17,3 +17,5 @@ skillstree: true # turn on or off the skills tree in about page
 # Build settings
 permalink: none
 markdown: kramdown
+toc:
+    enabled: true
