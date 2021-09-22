@@ -49,7 +49,7 @@ pyqtgraph.exmaples.run()
 
 上述命令或者代码会启动一个带有示例列表的启动器。从列表中选择一个项目以查看其源代码，并双击一个项目以运行示例。
 
-![image-20210922104154313](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-22-pyqtgraph//image-20210922104154313.png)
+![image-20210922104154313](/img/2021-09-22-pyqtgraph//image-20210922104154313.png)
 
 注意，如果你是通过`python setup.py develop`命令来安装pyqtgraph的，那么示例会被作为最上层模块。这种情况下，要用`import examples; examples.run()`。
 
@@ -105,9 +105,155 @@ pyqtgraph.setConfigOption('leftButtonPan', False)
 
 - 方向键围绕中心点旋转，就像拖动鼠标左键一样
 
+## 怎么使用pyqtgraph
 
+pyqtgraph的一些建议使用方式：
 
+- 交互式shell（python -i, ipython 等）
+- 显示应用程序的弹出窗口
+- PyQt应用程序的集成部件
 
+### 使用命令行
 
+PyQtGraph 是的通过命令行实现数据可视化非常容易。
 
+```python
+import pyqtgraph as pg
+pg.plot(data) # data can be a list of values of numpy array
+```
 
+上述代码会打开一个窗口显示给出数据的一条拟合线。pg.plot 函数返回一个句柄，这个句柄允许同一个窗口添加更多数据。注意：从python 提示符进行交互式绘图只能在PyQt中使用。当交互式提示符运行的时候，PySide 不能运行Qt 事件循环。如果你希望使用pyqtgraph和PySide进行交互，参考 'console' 示例。
+
+更多的例子：
+
+```python
+pw = pg.plot(xVals, yVals, pen='r') #plot x vs y in red
+pw.plot(xVals, yVals, pen='b')
+
+win = pg.GraphicsWindow() # Automatically generates grids with multiple items
+win.addPlot(data1, row=0, col=0)
+win.addPlot(data2, row=0, col=1)
+win.addPlot(data3, row=1, col=1, colspan=2)
+
+pg.show(imageData) #imageData must be a numpy array with 2 to 4 dimenstions
+```
+
+这里我们只接触了表面——这些函数接受许多不同的数据格式和选项，用于定制数据的外观。
+
+### 在一个应用程序中显示窗口
+
+虽然我认为这种方法有点懒惰，但通常情况下，“懒惰”和“高效”是无法区分的。这里的方法只是使用与命令行上使用的功能完全相同的功能，但是是从现有的应用程序中使用。当我只是想获得应用程序中数据状态的即时反馈，而不需要花时间为它构建用户界面时，我经常使用这个方法。
+
+### 在PyQt应用程序里嵌入部件
+
+对于认真的应用程序开发人员，pyqtgraph中的所有功能都可以部件来实现，这些部件可以下像任何其他Qt部件一样被嵌入。最重要最常见的部件有，PlotWidget, ImageView, GraphicsLayoutWidget， 和 GraphicsView。PyQtGraph的部件可以通过“Promote To..." 包含在Designer 的ui文件里：
+
+1. 在Designer里，创建一个QGraphicsView 部件（”Display Widgets" 下 "Graphics View" 类别）
+2. 在QGraphicsView 点击右键， 然后选择 “提升至..."
+3. 在”提升的类名“ 中输入你想使用的名称（"PlotWidget"，"GraphicsLayoutWidget" 等）
+4. 在"头文件"， 输入"pyqtgraph"
+5. 点击”添加“，然后点击”提升“
+
+有关提升部件的更多信息，请参阅设计文档。”VideoSpeedTest“和”ScatterPlotSpeedTest" 示例都演示了如何使用通过pyuic5 或者 pyside-uic 将.ui 文件编译成.py 模块。“designerExample” 示例演示了如何从.ui文件动态生成python类（不需要pyuic5 或者 pyside-uic）。
+
+### HiDPI 显示器
+
+PyQtGraph 有一个方法mkQApp， 当与非hidpi二级显示结合时，它默认设置了我们测试过的支持hidpi显示的最佳选项组合。对于您的应用程序，您可能已经自己实例化了QApplication， 在这种情况下，我们建议在运行QApplication.exec_()之前设置这些选项。
+
+对于Qt6 绑定，这个功能不需要设置任何属性就可以工作。
+
+对于Qt >= 5.14 和 <6 的版本；你可以通过下面的代码获得理想的行为：
+
+```python
+os.environ["QT_ENABLE_HIGHDPI_SCALING"] = "1"
+QApplication.setHighDpiScaleFactorRoundingPolicy(QtCore.Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
+```
+
+如果Qt>=5.6 或者 <5.14；你可以通过下面的代码获得接近理想的行为：
+
+```python
+QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps)
+```
+
+对于后者，理想的行为并没有实现。
+
+```python
+pyqtgraph.Qt.mkQApp(name=None) # name: (str) 应用名称，传递给Qt
+```
+
+创建一个新的应用程序或者返回当前示例（如果存在）。
+
+### PyQt 和 PySide
+
+PyQtGraph支持Qt库的两种流行的python包装器：PyQt和PySide。这两个包提供了几乎相同的api和功能，但由于各种原因（在其他地方讨论），您可能更喜欢使用其中一个包。当第一次导入pyqtgraph时，它通过进行一下检查自动确定使用哪个库：
+
+1. 如果PyQt5 已经导入，使用这个
+2. 如果PySide2 已经导入，使用这个
+3. 如果PySide6 已经导入，使用这个
+4. 如果PyQt6 已经导入，使用这个
+5. 其他情况，尝试按照顺序导入PyQt5，PySide2，PySide6，PyQt6.
+
+如果你两种库都安装了，你希望强制pyqtgraph使用其中的一个，只要确保在导入pyqtgraph之前导入它就可以：
+
+```python
+import PySide2 ## this will force pyqtgraph to use PySide2 instead of PyQt5
+import pyqtgraph as pg
+```
+
+### 将PyQtGraph 作为更大项目的子包嵌入
+
+在编写使用pyqtgraph的应用程序或者python包时，最常见的方法时在系统范围内（或者在虚拟环境中）安装pyqtgraph，并简单地从应用程序中导入pyqtgraph包。这样做的主要好处是，pyqtgraph的配置是独立于应用程序的，因此您（或者您的用户）可以自由安装pyqtgraph的新版本，而无需更改应用程序中的任何内容。这是使用python开发时的标准做法。
+
+有时，一个特定的程序需要在开发完成后一段时间内保持工作状态。对于单一用途的科学应用程序来说，情况往往如此。如果我们想确保该软件在十年后仍然能够工作，那么最好将其绑定到pyqtgraph的一个非常特定的版本，并避免导入系统安装的版本，该版本可能更新，而且可能不兼容。当应用程序需要特定站点的修改时尤其如此。
+
+为了支持这种独立的本地安装，pyqtgraph 中的所有内部导入都是相对的。这意味着pyqtgraph在内部从不将自己称为‘pyqtgraph'。这允许将包重命名或者作为子包使用，而不会与系统上其他版本的pyqtgraph发生任何命名冲突。
+
+最基本的方法时把代码仓库克隆到项目工程的合适位置。当你导入pyqtgraph，确定使用完整路径以避免和系统安装的pyqtgraph冲突。例如，假设有一个简单的项目，其项目结构如下：
+
+```python
+my_project/
+    __init__.py
+    plotting.py
+        """Plotting functions used by this package"""
+        import pyqtgraph as pg
+        def my_plot_function(*data):
+            pg.plot(*data)
+```
+
+为了集成一个特殊版本的pyqtgraph，我们将pyqtgraph的代码从库克隆大项目里，并重新命名以区别于系统安装的pyqtgraph:
+
+```python
+my_project$ git clone https://github.com/pyqtgraph/pyqtgraph.git local_pyqtgraph
+```
+
+然后相应地调整导入声明：
+
+```python
+my_project/
+    __init__.py
+    local_pyqtgraph/
+    plotting.py
+        """Plotting functions used by this package"""
+        import local_pyqtgraph.pyqtgraph as pg  # be sure to use the local subpackage
+                                                # rather than any globally-installed
+                                                # version.
+        def my_plot_function(*data):
+            pg.plot(*data)
+
+```
+
+使用`git checkout pyqtgraph-x.x.x`选择一个特殊版本的库，或者用`git pull`从上游拉取最新的pyqtgraph(更多信息参考git说明文档)。如果你不打算使用git的版本功能，在`git clone`命令里添加选项`--depth 1`只检索最新的版本。
+
+对于已经使用git管理代码的项目，也可以将pyqtgraph作为git子树包含在自己的仓库里。这种方法的主要优点是，除了能够从上游仓库里拉出pyqtgraph更新外，还可以将本地pyqtgraph提交到项目存储库里，并将这些更高推入上游：
+
+```shell
+my_project$ git remote add pyqtgraph https://github.com/pyqtgraph/pyqtgraph.git
+my_project$ git fetch pyqtgraph
+my_project$ git merge -s ours --allow-unrelated-histories --no-commit pyqtgraph/master
+my_project$ mkdir local_pyqtgraph
+my_project$ git read-tree -u --prefix=local_pyqtgraph/ pyqtgraph/master
+my_project$ git commit -m "Added pyqtgraph to project repository"
+```
+
+更多信息参考 `git subtree` 文档。
