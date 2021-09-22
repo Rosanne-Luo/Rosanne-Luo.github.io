@@ -9,10 +9,6 @@ tags: 技术文档 翻译 可视化 python
 finished: false
 ---
 
-## 目录
-
-[TOC]
-
 ## 简介
 
 ### 什么是pyqtgraph? ###
