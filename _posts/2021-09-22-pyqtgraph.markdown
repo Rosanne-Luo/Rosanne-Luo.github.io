@@ -253,3 +253,78 @@ my_project$ git commit -m "Added pyqtgraph to project repository"
 ```
 
 更多信息参考 `git subtree` 文档。
+
+## 安装
+
+PyQtGraph 最新版依赖于:
+
+- Python 3.7+
+- Qt 库，例如：PyQt5，或者PySide2
+- numpy
+
+满足这些依赖的最容易的方法时用pip或者Anaconda。
+
+这里有许多不同的方法来安装pyqtgraph， 选择哪一种取决于你的需要。
+
+### pip
+
+最常见的方法是用pip安装：
+
+```shell
+$ pip install pyqtgraph 
+$ pip install pyqtgraph==0.11.1 #python 3.6不支持最新版，需要指定旧的版本
+```
+
+一些用户可能需要通过pip3来安装。这个方法应该能够在所有平台上工作。
+
+### conda
+
+pyqtgraph 位于默认的Anaconda通道上:
+
+```shell
+$ conda install pyqtgraph
+```
+
+conda-forge 通道上同样可用：
+
+```shell
+$ conda install -c conda-forge pyqtgraph
+```
+
+### 源代码
+
+你有三种方式获知最新的功能和修复的bug：
+
+1. 从github上克隆pyqtgraph
+
+   ```shell
+   $ git clone https://github.com/pyqtgraph/pyqtgraph
+   $ cd pyqtgraph
+   ```
+
+   现在你可以从源代码安装pyqtgraph：
+
+   ```shell
+   $ pip install .
+   ```
+
+   
+
+2. 直接从github上安装:
+
+   ```shell
+   $ pip install git+git://github.com/pyqtgraph/pyqtgraph.git@master
+   ```
+
+   你可以改变上述命令的“master”为你更想要的分支名称或者提交码
+
+3. 你可以简单地将pyqtgraph文件夹纺织在任何可以导入的地方，例如放在另一个项目的根目录中。PyQtGraph不需要以任何方式“构建”或者编译。
+
+### 其他软件包
+
+pyqtgraph的包也有几种其他形式：
+
+- Debian， Ubuntu，和Linux：使用`apt install python-pyqtgraph`或者下载pyqtgraph页面顶端链接的.deb文件
+- Arch Linux：https://www.archlinux.org/packages/community/any/python-pyqtgraph/
+- Windows：下载，然后运行pyqtgraph页面顶端链接的.exe文件：[http://pyqtgraph.org](http://pyqtgraph.org/)
+
