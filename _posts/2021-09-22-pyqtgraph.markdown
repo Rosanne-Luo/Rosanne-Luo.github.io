@@ -328,3 +328,53 @@ pyqtgraph的包也有几种其他形式：
 - Arch Linux：https://www.archlinux.org/packages/community/any/python-pyqtgraph/
 - Windows：下载，然后运行pyqtgraph页面顶端链接的.exe文件：[http://pyqtgraph.org](http://pyqtgraph.org/)
 
+## Qt 速成课
+
+PyQtGraph 广泛使用Qt来实现几乎所有的可视化输出接口。Qt的文档写的很好，我们鼓励所有的pyqtgraph开发者都要熟悉这些文档。这节的目的是向pyqtgraph的开发者们介绍如何使用Qt编程（PyQt或者PySide）。
+
+### QWidgets 和 Layouts
+
+一个Qt 图形界面通常由几个基本组件组成：
+
+- 一个窗口
+- 多个QWidgets实例，例如QPushButton，QLabel，QComboBox 等
+- QLayouts实例（可选但是强烈建议）自动管理部件的位置，以允许GUI以可用的方式调整大小。
+
+PyQtGraph通过提供自己的QWidgets子类来插入到GUI中来适应这种模式。
+
+例如：
+
+```python
+from PyQt5 import QtGui  # (the example applies equally well to PySide2)
+import pyqtgraph as pg
+
+## Always start by initializing Qt (only once per application)
+app = QtGui.QApplication([])
+
+## Define a top-level widget to hold everything
+w = QtGui.QWidget()
+
+## Create some widgets to be placed inside
+btn = QtGui.QPushButton('press me')
+text = QtGui.QLineEdit('enter text')
+listw = QtGui.QListWidget()
+plot = pg.PlotWidget()
+
+## Create a grid layout to manage the widgets size and position
+layout = QtGui.QGridLayout()
+w.setLayout(layout)
+
+## Add widgets to the layout in their proper positions
+layout.addWidget(btn, 0, 0)   # button goes in upper-left
+layout.addWidget(text, 1, 0)   # text edit goes in middle-left
+layout.addWidget(listw, 2, 0)  # list widget goes in bottom-left
+layout.addWidget(plot, 0, 1, 3, 1)  # plot goes on right side, spanning 3 rows
+
+## Display the widget as a new window
+w.show()
+
+## Start the Qt event loop
+app.exec_()
+```
+
+更加复杂的界面可以使用Qt Designer进行图形化设计，它允许您简单地将小部件拖到窗口来定义其外观。
