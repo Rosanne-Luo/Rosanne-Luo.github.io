@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pyqtgraph 中文文档"
-subtitle: "本文是对pyqtgraph英文文档的中文翻译"
+subtitle: "本文是对pyqtgraph英文文档的中文翻译 原文档链接：https://pyqtgraph.readthedocs.io/en/latest/introduction.html"
 date: 2021-09-22
 author: 七月
 category: books
