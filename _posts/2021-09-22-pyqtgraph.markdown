@@ -447,7 +447,7 @@ Qt GraphicsView 坐标系统的更多信息参考： http://qt-project.org/doc/q
   - PlotWidget - GraphicsView的子类，只显示一个PlotItem。PlotItem的大多数方法都可以通过PlotWidget使用。
   - GraphicsLayoutWidget - QWidget 的子类，显示一个GraphicsLayout。GraphicsLayout 的多数方法都可以通过GraphicsLayoutWidget使用。
 
-![image-20210923110750886](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-22-pyqtgraph/image-20210923110750886.png)
+![image-20210923111704892](/img/2021-09-22-pyqtgraph//image-20210923111704892.png)
 
 ### 示例
 
