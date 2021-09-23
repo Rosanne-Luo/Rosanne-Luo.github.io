@@ -378,3 +378,76 @@ app.exec_()
 ```
 
 更加复杂的界面可以使用Qt Designer进行图形化设计，它允许您简单地将小部件拖到窗口来定义其外观。
+
+### 命名规范
+
+实际上，pyqtgraph中的每个类都是Qt提供的基类的扩展，在阅读文档时，请记住所有Qt的类都以字母'Q'开头。在阅读任何类的方法时，查看使用了哪些Qt基类以及查看Qt文档都是很有帮助的。
+
+大多数Qt的类定义的信号很难与常规方法分开。pyqtgraph 定义的几乎所有信号都以"sig"开头，以表明这些信号不是在Qt级定义的。
+
+大多数情况下，以“Widget"结束的类都是QWidget的子类，因此可以作为一个GUI元素在Qt窗口中使用。类名中以”Item"结尾的类是QGraphicsItem的子类，只能在QGraphicsView实例（如GraphicsLayoutWidget或者PlotWidget）中显示。
+
+### 信号，槽位和事件
+
+【待续...如果你想阅读更多内容，请在pyqtgraph 论坛上发布请求】
+
+Qt 通过执行其事件循环来检测和响应用户交互。
+
+- 在事件循环中发生了什么？
+- 什么时候需要使用QApplication.exec_()?
+- 如何控制事件循环的执行？(QApplication.processEvents)
+
+### GraphicsView 和 GraphicsItem
+
+Qt GraphicsView 的更多信息请参考：http://qt-project.org/doc/qt-4.8/graphicsview.html
+
+### 坐标系统和变换
+
+Qt GraphicsView 坐标系统的更多信息参考： http://qt-project.org/doc/qt-4.8/graphicsview.html#the-graphics-view-coordinate-system
+
+## Plotting  in pyqtgraph
+
+在pyqtgraph中绘制数据有几种基本方法：
+
+| [`pyqtgraph.plot()`](https://pyqtgraph.readthedocs.io/en/latest/functions.html#pyqtgraph.plot) | Create a new plot window showing your data       |
+| ------------------------------------------------------------ | ------------------------------------------------ |
+| `PlotWidget.plot()`                                          | Add a new set of data to an existing plot widget |
+| [`PlotItem.plot()`](https://pyqtgraph.readthedocs.io/en/latest/graphicsItems/plotitem.html#pyqtgraph.PlotItem.plot) | Add a new set of data to an existing plot widget |
+| [`GraphicsLayout.addPlot()`](https://pyqtgraph.readthedocs.io/en/latest/graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.addPlot) | Add a new plot to a grid of plots                |
+
+这些函数都接受相同的参数来控制数据如何解释和显示：
+
+- x - 可选X数据；如果不指定，则会自动生成一组整数
+- y - Y data
+- pen - 绘制线条，当禁用线条的时候赋值为None
+- symbol - 描述用于每个点的符号形状的字符串。这也可以是一个字符串序列，每个点都有不同的符号。
+- symbolPen - 在绘制符号轮廓时使用的笔（或笔的顺序）
+- symbolBrush - 当填充符号时使用的笔刷
+- fillLevel - 将曲线下的面积填入这个Y值
+- brush - 当填充曲线下方时使用的刷子
+
+这些参数的演示请参阅“绘图”示例。
+
+上述所有函数返回所创建对象的句柄，允许进一步修改绘图和数据。
+
+### 绘图类的组织结构
+
+在显示绘图数据时涉及到几个类。这些类中大多数都是自动实例化的，但是了解它们是如何组织在一起的以及彼此间的关系是很有用的。PyQtGraph 很大程度上基于Qt的GraphicsView框架——如果你还不太熟悉这个框架，值得读一下（但不是必须的）。最重要的是：1）Qt GUIs 由QWidgets组成，2）一个叫做QGraphicsView的特殊小部件用于显示复杂的图形，3）QGraphicsItem 定义了再AGraphicsView中显示的对象。
+
+- 数据类（QGrapicsItem的所有子类）
+  - PlotCurveItem - 显示给定x，y数据的线
+  - ScatterPlotItem - 显示给定x，y数据的点
+  - PlotDataItem - 结合了PlotCurveItem和ScatterPlotItem。上面讨论的绘图函数创建这种类型的对象。
+- 容器类（QGraphicsItem的子类；包含其他QGraphicsItem对象，必须在GraphicsView中查看）
+  - PlotItem - 包含用于显示数据的ViewBox以及用于显示轴和标题的AxisItems和标签。这是一个QGraphicsItem子类，因此只能在GraphicsView中使用。
+  - GraphicsLayout - QGraphicsItem的子类，用于显示网格项目。这通常用于显示多个PlotItems。
+  - ViewBox - QGraphicsItem的子类。用户可以通过鼠标缩放或者平移ViewBox的内容。通常所有的PlotData/PlotCurve/ScatterPlotItem都在一个ViewBox中显示。
+  - AxisItem - 显示坐标轴的值、刻度和标签，通常用于PlotItem。
+- 容器类（QWidget的子类；可以被集成到PyQt GUI里）
+  - PlotWidget - GraphicsView的子类，只显示一个PlotItem。PlotItem的大多数方法都可以通过PlotWidget使用。
+  - GraphicsLayoutWidget - QWidget 的子类，显示一个GraphicsLayout。GraphicsLayout 的多数方法都可以通过GraphicsLayoutWidget使用。
+
+![image-20210923110750886](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-22-pyqtgraph/image-20210923110750886.png)
+
+### 示例
+
