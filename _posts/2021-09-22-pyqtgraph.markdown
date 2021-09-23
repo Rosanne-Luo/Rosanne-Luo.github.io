@@ -451,3 +451,32 @@ Qt GraphicsView 坐标系统的更多信息参考： http://qt-project.org/doc/q
 
 ### 示例
 
+请参考pygtgraph中的“plotting" 和 ”PlotWidget"
+
+## 显示图像和视频
+
+PyQtGraph 将 2D numpy 数组显示为图像，并提供了用于确定如何在屏幕上转换numpy数据类型和RGB值的工具。如果你想显示来自普通图像和视频文件格式的数据，你首先需要用另一个库加载数据（PIL 对图像和内置numpy转换工作得很好）。
+
+显示2D或者3D数据最简单的方式就是使用pyqtgraph.image()函数：
+
+```python
+import pyqtgraph as pg
+pg.image(imageData)
+```
+
+这个函数接受任何浮点数或者整数数据类型，然后在一个ImageView中显示书.这个部件可以控制图像数据如何转化为32位的RGBa 值。转化过程通过两步来实现（都是可选的）：
+
+1. 缩放和偏移数据（通过在显示的直方图上选择暗/亮级别）
+2. 使用查找表将数据转换为颜色（由渐变编辑器中显示的颜色决定）
+
+如果是3D数据（时间，x，y），时间轴将以滑块的形式显示，并可以设置当前显示的数据帧。（如果你的数据的坐标轴顺序不一样，可以用numpy.transpose来重新排列）。
+
+这里还有一些显示图像的其他方法：
+
+- ImageView 可以直接实例化，然后嵌入到Qt应用程序中
+- ImageItem 实例可以在ViewBox或者GraphicsView中使用
+- 使用RawImageWidget 实现更高的新能
+
+这些类中的任何一个都可以通过调用setImage（）来显示新帧来显示视频。
+
+有关更多信息，请参阅上面列出的类和“VideoSpeedTest"，”ImageItem", "ImageView" 和 “HistogramLUT" 示例。
