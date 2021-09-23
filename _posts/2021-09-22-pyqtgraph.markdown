@@ -480,3 +480,86 @@ pg.image(imageData)
 这些类中的任何一个都可以通过调用setImage（）来显示新帧来显示视频。
 
 有关更多信息，请参阅上面列出的类和“VideoSpeedTest"，”ImageItem", "ImageView" 和 “HistogramLUT" 示例。
+
+## 3D 绘图
+
+PyQtGraph使用OpenGL提供一个3D场景系统。这个系统是功能性的，但仍然处于早期开发阶段。目前的功能包括：
+
+- 带有缩放/旋转控件（鼠标拖动和滚轮）的3D视图控件
+- 场景允许项目添加/删除每个项目的转换和父/子关系
+- 三角网格
+- 基本的网格计算函数：等值面、每个顶点的法线
+- 体积渲染项目
+- 网格/轴项目
+
+更多信息，请参阅API手册和Volumetric (GLVolumeItem.py)和 Isosurface(GLMeshItem.py)示例
+
+基本用法示例：
+
+```python
+## build a QApplication before building other widgets
+import pyqtgraph as pg
+pg.mkQApp()
+
+## make a widget for displaying 3D objects
+import pyqtgraph.opengl as gl
+view = gl.GLViewWidget()
+view.show()
+
+## create three grids, add each to the view
+xgrid = gl.GLGridItem()
+ygrid = gl.GLGridItem()
+zgrid = gl.GLGridItem()
+view.addItem(xgrid)
+view.addItem(ygrid)
+view.addItem(zgrid)
+
+## rotate x and y grids to face the correct direction
+xgrid.rotate(90, 0, 1, 0)
+ygrid.rotate(90, 1, 0, 0)
+
+## scale each grid differently
+xgrid.scale(0.2, 0.1, 0.1)
+ygrid.scale(0.2, 0.1, 0.1)
+zgrid.scale(0.1, 0.2, 0.1)
+```
+
+## 线条、填充和颜色
+
+Qt依赖QColor,QPen 和 QBrush 类实现特定的线条和填充风格。pyqtgraph使用相同的内部机制，同时允许许多简写方法来指定相同的风格选项。
+
+pyqtgraph 的许多函数和方法都接受指定线条风格（pen）、填充风格（brush）或者颜色的参数。对于大部分函数参数，可能会用到的有如下值：
+
+- 表示颜色的单字符（b，g，r，c，m，y，k，w）
+- （r，g，b）或者（r，g，b，a）元组
+- 单灰度值（0.0 - 1.0）
+- （index，maxinum）元组用于自动遍历颜色（参见intColor）
+- QColor
+- QPen / QBrush 
+
+值得注意的是，使用mkPen()/mkBrush()函数或者Qt的QPen和QBrush类可以很容易地构建更复杂的笔和笔刷
+
+```
+mkPen('y', width=3, style=QtCore.Qt.DashLine)          ## Make a dashed yellow line 2px wide
+mkPen(0.5)                                             ## solid grey line 1px wide
+mkPen(color=(200, 200, 255), style=QtCore.Qt.DotLine)  ## Dotted pale-blue line
+```
+
+### 默认背景和前景颜色
+
+默认情况下，pyqtgraph的绘图使用黑色背景，坐标轴、文本和绘图线使用灰色背景。这些默认设置可以通过pyqtgraph.setConfigOption() 修改：
+
+```python
+import pyqtgraph as pg
+
+## Switch to using white background and black foreground
+pg.setConfigOption('background', 'w')
+pg.setConfigOption('foreground', 'k')
+
+## The following plot has inverted colors
+pg.plot([1,4,2,3,5])
+
+```
+
+（注意，必须在创建任何控件之前设置这些参数）
+
