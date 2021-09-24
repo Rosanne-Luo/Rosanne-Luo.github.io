@@ -563,3 +563,80 @@ pg.plot([1,4,2,3,5])
 
 （注意，必须在创建任何控件之前设置这些参数）
 
+## 交互式数据选择控件
+
+PyQtGraph 包含可以让用户选择和标记数据区域的图形项目。
+
+### 线性选择与标记
+
+两个允许标记和选择1维数据的类：LinearRegionItem 和 InfiniteLine。LinearRegionItem 可以被添加到ViewBox或者PlotItem中来标记一个水平或者垂直的区域。这个区域可以被拖动，它的边界可以被独立的移动。第二个类，InfiniteLine， 常常被用于标记沿着x或者y轴的特殊的位置。这些可能会被用户拖动。
+
+### 2D 选择与标记
+
+pyqtgraph 通过ROI类或者任何它的子类来选择一个图像的2D区域。默认情况下，ROI 仅仅展示一个矩形区域，用户可以移动这个矩形区域来标记一个特殊的区域（通常情况下这个区域是一个图像的区域，但这不是必须的）。有几个添加句柄的方法可以调整ROI的大小或者旋转（addScaleHandle， addRotateHandle， 等）。这些句柄可以放置在相对ROI的任何位置，并可以围绕任意中心点缩放/旋转ROI。有几个具有各种形状和交互模式的ROI子类。
+
+可以使用 ROI.getArrayRegion 通过ROI 和 一个 ImageItem 自动提取一个图像的区域。ROI 类通过affineSlice 实现这个提取过程。
+
+ROI 也可以用于控制场景中的移动/旋转/缩放项目，类似于大多数矢量图形编辑应用程序。
+
+有关更多信息，参阅ROITypes 示例。
+
+## 导出
+
+PyQtGraph 提供了各种2D图形的导出格式。对于 3D 图形，参见下文的”3D图形导出“。
+
+### 从GUI 导出
+
+任何2D 图形都可以通过右键点击图形，然后选择”export“ 来导出。这将显示一个对话框，其中用户必须：
+
+1. 选择一个项目（或者整个场景）来导出。选中的项目会在右边的图形窗口中高亮显示（但这种高亮不会在导出的文件中显示）。
+2. 选择1个导出格式
+3. 修改任何满意的导出选项
+4. 点击”export“按钮
+
+### 导出格式
+
+- Image - PNG 是默认的格式。具体的图像格式区域与你的QT库。但是，常见的格式例如PNG, JPG和TIFF等都是支持的。
+- SVG - 导出SVG格式一般是为了能在Inkscape 和 Adobe Illustrator 中也能很好的工作.为了得到高质量的导出文件,请使用PyQtGraph 0.9.3 以上的版本。这也是生成出版物质量的图像的好方法。
+- CSV - 只能导出PlotItem 里的绘图数据
+- Matplotlib - 此导出器将打开一个新窗口，并尝试使用matplotlib(如果可用）重新绘制数据。请注意，有些图形特性要么在此导出器中没有实现，要么在matplotlib中不可用。这个导出器只能导出PlotItem中的数据。
+- Printer - 导出到操作系统的打印服务。这个导出器是为了完整性而提供的，但是由于Qt打印系统的问题，它并没有得到很好的支持。
+- HDF5 - 如果安装了H5PY， 那么可以支持从PlotItem导出数据为H5PY文件。该导出器支持包含多条曲线的PlotItem对象，基于columnMode参数将数据堆叠到单个HDF5数据集。如果数据项大小不同，则每个数据项都有自己的数据集。
+
+### 通过API导出
+
+通过编程导出数据的代码如下：
+
+```python
+import pyqtgraph as pg
+import pyqtgraph.exporters
+
+# generate something to export
+plt = pg.plot([1,5,2,4,3])
+
+# create an exporter instance, as an argument give it
+# the item you wish to export
+exporter = pg.exporters.ImageExporter(plt.plotItem)
+
+# set export parameters if needed
+exporter.parameters()['width'] = 100   # (note this also affects height parameter)
+
+# save to file
+exporter.export('fileName.png')
+```
+
+如果要导出整个 GraphicsLayoutWidget  grl布局，需要用如下的方式初始化导出器：
+
+```python
+exporter = pg.exporters.ImageExporter( grl.scene() )
+```
+
+### 导出3D图形
+
+上面描述的导出功能还不适用于3D图形。但是，可以使用QGLWidget.grabFrameBuffer 或者 QGLWidget.renderPixmap来生成图像。
+
+```python
+glview.grabFrameBuffer().save("fileName.png")
+```
+
+更多信息参考Qt文档
