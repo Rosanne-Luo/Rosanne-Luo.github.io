@@ -13,11 +13,11 @@ finished: false
 
 ### 什么是pyqtgraph? ###
 
-PyQtG是一个提供工程和科学应用程序中常用功能的用于python环境的图形和用户界面库。它的主要目标是：1）提供用于显示数据（数据、视频等）的快速、交互式图形。2）提供帮助快速应用开发（例如Qt Designer的属性树）的工具。
+PyQtGraph是一个提供工程和科学应用程序中常用功能的用于python环境的图形和用户界面库。它的主要目标是：1）提供用于显示数据（数据、视频等）的快速、交互式图形。2）提供帮助快速应用开发（例如Qt Designer的属性树）的工具。
 
 PyQtGraph 大量使用Qt GUI平台（通过PyQt 或者 PySide）实现高性能图形，同时大量使用numpy实现大量的数字处理。特别是，pyqtgraph使用了QT的GraphicsView框架，这个框架本事就是一个非常强大的图形系统；我们对这个框架做了优化和简化，使得用户可以通过最少的操作来实现数据可视化。
 
-Pqtgraph 可以在 Linux, Windows， 和OSX三个平台上运行。
+Pyqtgraph 可以在 Linux, Windows， 和OSX三个平台上运行。
 
 ### 它能做什么 ? ###
 
@@ -52,7 +52,7 @@ pyqtgraph.exmaples.run()
 ### 和别的工具比...
 
 - matplotlib：对于绘图，pyqtgraph 不像matplotlib那样完整/成熟, 但是它运行速度更快。Matplotlib更倾向于制作出版物质量的图形，而pyqtgraph 是用于数据采集和分析应用程序。Matplotlib 对于matlab程序员来说更加直观；Pyqtgraph 对于python/qt程序员来说更加直观。据我所知，Matplotlib 不包括许多pyqtgraph拥有的特性，例如图像交互、体积渲染、参数树、流程图等。
-- pyqwt5：几乎个pyqtgraph 一样快，但是在绘图功能上不完整。pyqtgraph中的图像处理要完整得多（同样的，qwt中没有ROI部件）。另外，pyqtgraph 是用纯python编写的，所以比pyqwt更容易一直，而pyqwt在开发过程中往往落后于pyqt(我最初使用pyqwt，但是后来觉得我的项目中依赖它太麻烦了)。据我所知，与matplotlib一样，pyqwt不包括许多pyqtgraph拥有的特性，如图像交互、体积渲染、参数树、流程图等。
+- pyqwt5：几乎和pyqtgraph 一样快，但是在绘图功能上不完整。pyqtgraph中的图像处理要完整得多（同样的，qwt中没有ROI部件）。另外，pyqtgraph 是用纯python编写的，所以比pyqwt更容易移植，而pyqwt在开发过程中往往落后于pyqt(我最初使用pyqwt，但是后来觉得我的项目中依赖它太麻烦了)。据我所知，与matplotlib一样，pyqwt不包括许多pyqtgraph拥有的特性，如图像交互、体积渲染、参数树、流程图等。
 
 （我使用这些库的经验有些过时了；如果我说错了，请纠正我）
 
