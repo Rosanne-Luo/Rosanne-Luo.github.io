@@ -19,7 +19,9 @@ finished: false
 
 我认为”平衡“是穿衣的重点。连衣裙的搭配也需要一点平衡感，才不会看起来太正经——那会让人觉得有点高高在上，所以我会在连衣裙外面穿一件复古牛仔短夹克。我的连衣裙都很百搭，浅蓝色、黑色、酒红色和棕色，所以一年到头任何几节都能穿。
 
+身体的感受是最重要的。虽然这件衣服的款式时髦魅力，却无法提供舒适的穿着体验，我也不会购买它的。我必须真切地感受到衣服本身的正确效用。
 
+风格从来不会被短暂的潮流趋势所摆布，它是从容而具有个人特征的。风格是完美地驾驭服装，让穿着者的风采不被着装所掩盖，更不会把你变成另一个人。除此之外，风格是不能被消费水平或有没有能力购买昂贵的设计师服装来定义的——那只是有钱，不是有风格！
 
 **风格练习的秘诀**
 
@@ -80,9 +82,46 @@ hush、Desmond & Dempsey For Restless Sleepers 、Olivia von Halle、Three Grace
 
 Rachel Comey、ViBi Venezia、Pretty Ballerinas、Le Monde Beryl、By Far、Aquazzura、Ellery、Boden、Tod's
 
+**能买到人造珠宝的品牌**
 
+Nocturne、DianaBroussard、J.Crew、ToolallyJewellery、AnnieCostelloBrown、Mango
 
+**制作奢华珠宝的品牌**
 
+AstleyClarke、LauraLee、DelnaDelettrez、AnnaQuan、AurelieBidermann、JessicaMcCormack
+
+**安娜伯克利的衣橱整理秘籍**
+
+1. 整理时，把衣服分成几个小类别。熨烫衣服时，将所有上衣同时熨烫，铺在床上一件一件熨的话，蒸汽很快就会耗尽。如果你有挂衣杆，用上它吧，非常有用。
+2. 尽可能多地利用这些单品，并且保持诚实：它能让你感觉自信吗？它适合你吗？你喜爱它吗？所有答案都必须是肯定的——否则就跟它说再见吧！
+3. 扔掉任何让你看起来精神不佳、不合身或者破损的单品。
+4. 不要以“最好的”或者“以防万一”这些借口来保留衣服。请穿上那些你真正喜爱的单品——否则，说句老实话，保留它们的意义何在？
+5. 尝试按照生活方式来分类你的衣橱——**工作、休闲、周末和特殊场合**。这能让你更清晰地了解自己拥有哪些单品，并且快速穿好一套衣服。
+6. 我总是提倡把那些暂时不穿的衣服收起来，所以冬天来临时，夏天的衣服就可以打包了。使用真空袋可以节约空间，记得在包袱中放一些防虫剂。
+
+**私人购物顾问会问的五个问题**
+
+1. 你最优先考虑的是什么？你想要达到什么样的结果和目标？
+2. 你的身材和生活方式最近改变过吗？
+3. 你最常穿的衣服有哪些？或者，哪件衣服不在衣橱里时让你十分想念？
+4. 你怎么形容自己的风格？
+5. 你准备接受全新的造型或者尝试一些新单品嘛？
+
+**哪里可以买到方便又实用的上衣**
+
+德赖斯·范诺顿、玛尼Joie、Velvet by Graham & Spencer、Jigsaw、Cedric Charlier、Matin Studio、Sacai、Ellery、Boden
+
+**哪里选购半身裙**
+
+黛安·冯芙丝汀宝、ZARA、Boden、Whistles、LeKilt、SoniaRykiel、TheRow、BaumundPferdgarten、ByJohnny、LKBennett
+
+**不花巨款就能买到的西装上衣**
+
+ZARA、Jigsaw、ME+EM、J.Crew、MassimoAlba
+
+**哪里可以找到出众的大衣**
+
+博柏利、麦丝玛拉、Mackintosh、Jaeger、Jigsaw、COS、HarrisWharf、Raey、HanStudios
 
 
 
