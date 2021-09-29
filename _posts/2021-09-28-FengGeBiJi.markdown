@@ -192,6 +192,10 @@ T拿出衣柜中的所有衣物，按上衣、裤子、裙子、鞋、包等种�
 
 高品位的同色搭配是全身灰色或者白色，再配上不同颜色的饰物。
 
+白衬衫选择没有装饰的款型，材质要为纯棉。最佳的长度为可以放入下装，并且露在外面也不会特别长。要杜绝穿尺寸过大的衣服。选择完全贴合自己身材的服装。圆领、小领、大领、配有花边或是饰边等，本身很有特征的衣物，请考虑作为第二件搭配。
+
+应该持有的T恤为3类！英文、V领、灰色。英文T恤和灰色T恤在单穿一件时一定要卷起袖口。卷起袖口的话会显出服装的厚重感，对比起来手臂上方会显得很纤细。V领的白色T恤应该选择深V这类的款式，锁骨部位会显出美感。V领T恤应该选择比其他两类T恤更加轻薄，柔软的材料。
+
 **示例**
 
 ![image-20210929133718087](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929133718087.png)
@@ -218,3 +222,18 @@ T拿出衣柜中的所有衣物，按上衣、裤子、裙子、鞋、包等种�
 
 
 
+![image-20210929145654199](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929145654199.png)
+
+
+
+冬天如果用彩色的连体袜来代替黑色连体袜的话，就会显得格外有个性。特别推荐深蓝、烟灰色和酒红色。
+
+![image-20210929145957323](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929145957323.png)
+
+白衬衫
+
+![image-20210929150413149](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929150413149.png)
+
+![image-20210929150440479](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929150440479.png)
+
+![image-20210929151255104](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929151255104.png)
