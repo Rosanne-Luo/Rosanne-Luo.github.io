@@ -4,7 +4,7 @@ title: "图数据库学习笔记"
 subtitle: ""
 date: 2021-09-26
 author: 七月
-category: 投资理财
+category: IT技术
 tags: 图数据库 算法 技术文档
 finished: false
 ---
