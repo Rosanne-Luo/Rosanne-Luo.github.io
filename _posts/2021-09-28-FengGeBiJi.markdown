@@ -200,42 +200,42 @@ T拿出衣柜中的所有衣物，按上衣、裤子、裙子、鞋、包等种�
 
 **示例**
 
-![image-20210929133718087](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929133718087.png)
+![image-20210929133718087](/img/2021-09-28-FengGeBiJi//image-20210929133718087.png)
 
 1：2的下装搭配，纵向呈I字形的话显腿长的效果很卓著。这种搭配当然要把裤腿卷起来，在高帮的匡威鞋帮和裤边之间稍微露出腿部较好。袖口也要卷起来。脚踝和手腕露出来，再加上收腰的效果，会愈加显瘦。个子不高的话，推荐穿着内增高的匡威鞋。因为1︰2的搭配穿法略显中性，看起来像干练的职场女性，配上亮色包能提升女性化魅力。
 
 
 
-![image-20210929133813926](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929133813926.png)
+![image-20210929133813926](/img/2021-09-28-FengGeBiJi//image-20210929133813926.png)
 
 图片中用咖啡色和黑色的动物纹手拿包来提色。
 
-![image-20210929133912447](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929133912447.png)
+![image-20210929133912447](/img/2021-09-28-FengGeBiJi//image-20210929133912447.png)
 
 用围在腰上的红色格子衬衫和黑白条纹包来提色。
 
 
 
-![image-20210929133939466](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929133939466.png)
+![image-20210929133939466](/img/2021-09-28-FengGeBiJi//image-20210929133939466.png)
 
 搭配深色衣物时，饰物反而要用白色或银色。图中珍珠项链、白色腰带、格子纹皮鞋和条纹手拿包的白色部分都遵循了这一原则。这样搭配能缓和沉重感，在蓝色系中融入休闲风。
 
-![image-20210929134049553](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929134049553.png)
+![image-20210929134049553](/img/2021-09-28-FengGeBiJi//image-20210929134049553.png)
 
 
 
-![image-20210929145654199](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929145654199.png)
+![image-20210929145654199](/img/2021-09-28-FengGeBiJi//image-20210929145654199.png)
 
 
 
 冬天如果用彩色的连体袜来代替黑色连体袜的话，就会显得格外有个性。特别推荐深蓝、烟灰色和酒红色。
 
-![image-20210929145957323](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929145957323.png)
+![image-20210929145957323](/img/2021-09-28-FengGeBiJi//image-20210929145957323.png)
 
 白衬衫
 
-![image-20210929150413149](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929150413149.png)
+![image-20210929150413149](/img/2021-09-28-FengGeBiJi//image-20210929150413149.png)
 
-![image-20210929150440479](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929150440479.png)
+![image-20210929150440479](/img/2021-09-28-FengGeBiJi//image-20210929150440479.png)
 
-![image-20210929151255104](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-28-FengGeBiJi//image-20210929151255104.png)
+![image-20210929151255104](/img/2021-09-28-FengGeBiJi//image-20210929151255104.png)
