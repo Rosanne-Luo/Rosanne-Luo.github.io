@@ -380,7 +380,6 @@ T拿出衣柜中的所有衣物，按上衣、裤子、裙子、鞋、包等种�
 
 * 精品 店“ Cinq essentiel” 的 博 客（ http:// www. cinqessentiel. com/ blog） 
 * “UNITED ARROWS” 的 博 客（ http:// www. united- arrows. jp/ store_ blog） 
-* 造型 设计师 大 草 直 子 的 博 客（ http:// hrm- home. com/ blog/） 
 * 造型 设计师 菊 池 京 子 的 个人 主页（ http:// kk- closet. com/）
 
 **记穿搭笔记**
