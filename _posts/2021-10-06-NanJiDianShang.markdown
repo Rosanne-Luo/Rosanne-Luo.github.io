@@ -53,7 +53,7 @@ finished: false
 
 IPO 与 借壳上市对比如下：
 
-![img](https://bkimg.cdn.bcebos.com/pic/d01373f082025aaf27c620cef9edab64034f1a3a?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto)
+![img](/img/2021-10-06-NanJiDianShang/format,f_auto.jpeg)
 
 从南极电商的公司发展和上市方式来看，已公布的财务数据中只有15年后的数据才反映了南极电商本身的经营情况。
 
