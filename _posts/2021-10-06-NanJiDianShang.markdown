@@ -6,7 +6,7 @@ date: 2021-10-06
 author: 七月
 category: 投资理财
 tags: 个股 专业零售 南极电商
-finished: false
+finished: true
 ---
 
 ## 南极电商全景表
