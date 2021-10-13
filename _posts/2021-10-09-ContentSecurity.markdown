@@ -19,15 +19,13 @@ finished: false
 
 [内容安全治理需要注意什么？](https://zhuanlan.zhihu.com/p/147582376)
 
-[互联网公司要怎么做内容风控才更安全](https://zhuanlan.zhihu.com/p/142775948)
+[互联网公司要怎么做内容风控才更安全](https://zhuanlan.zhihu.com/p/142775948) *
 
-[作为互联网产品经理，如何应对内容安全监管？](http://www.woshipm.com/pd/4040139.html)
-
-[国内信息内容安全产业现状研究及发展建议](https://www.secrss.com/articles/10325)
+[作为互联网产品经理，如何应对内容安全监管？](http://www.woshipm.com/pd/4040139.html) *
 
 [今日头条内容安全检测工具“灵犬”技术原理揭秘](https://www.secrss.com/articles/12637)
 
-[浅谈内容安全体系建设](https://www.secrss.com/articles/3883)
+[浅谈内容安全体系建设](https://www.secrss.com/articles/3883) *
 
 [智能时代的内容安全，易盾是如何落地的？](https://www.freebuf.com/articles/network/197911.html)
 
@@ -40,6 +38,8 @@ finished: false
 [阿里云](https://www.aliyun.com/product/lvwang?utm_content=se_1009517739)
 
 [京东云](https://docs.jdcloud.com/cn/content-moderation/functional-description)
+
+[净网盾](https://defense.yunaq.com/jwd/?from=zhihu01610)
 
 
 
