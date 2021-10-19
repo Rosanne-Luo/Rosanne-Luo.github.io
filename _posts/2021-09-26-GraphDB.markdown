@@ -172,4 +172,7 @@ Neo4j 提供了对Java、JavaScript、.Net、Python 和Go的商业支持。NEO4J
 - 图形平台with Tools并且支持所有的用户
 - 商业模式、专注和持久力
 
-#### 
+## 学习资源
+
+[基于图的欺诈检测论文及资源](https://github.com/safe-graph/graph-fraud-detection-papers)
+
