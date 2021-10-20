@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "图数据库学习笔记"
+title: "图学习笔记"
 subtitle: ""
 date: 2021-09-26
 author: 七月
@@ -9,17 +9,25 @@ tags: 图数据库 算法
 finished: false
 ---
 
-## 图数据库 TOP20(202109)
+## 图概览
+
+从宏观的角度看，基于图的技术可分为图存储和图计算两大块。
+
+![image-20211020160237583](/img/2021-09-26-GraphDB//image-20211020160237583.png)
+
+## 图存储
+
+### 图数据库 TOP20(202109)
 
 数据来源：https://db-engines.com/en/ranking/graph+dbms  （每月更新一次）
 
-![image-20210926144016104](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/2021-09-26-GraphDB//image-20210926144016104.png)
+![image-20210926144016104](/img/2021-09-26-GraphDB//image-20210926144016104.png)
 
-## 图数据库选购指南
+### 图数据库选购指南
 
 内容摘取自neo4j官网的文章：**[The Graph Technology Buyer’s Guide](https://go.neo4j.com/rs/710-RRC-335/images/Graph-Technology-Buyers-Guide-EN-US.pdf?_gl=1*mcxk3z*_ga*MTE3OTc2NDU5NC4xNjMyNjI3OTEy*_ga_DL38Q8KGQC*MTYzMjY0MjA4Ni4zLjEuMTYzMjY0MjA5OS4w&_ga=2.190242156.657452020.1632627912-1179764594.1632627912&_gac=1.94827246.1632642097.Cj0KCQjwkbuKBhDRARIsAALysV67JKoB84riFfD4Etf5uWmuEtvL3pCga_8OYtNf-ujvFQG2RECdn2gaAnRuEALw_wcB)**
 
-### 图数据库的好处
+#### 图数据库的好处
 
 存储直观，反映了人类大脑的思考方式，高效的查找邻近数据。
 
@@ -44,7 +52,7 @@ finished: false
 
 **图数据库的好处**
 
-### 图数据库的选购原则
+#### 图数据库的选购原则
 
 图形数据库的购买原则常常被误解为类似于购买任何的传统数据库。在某种程度上这是对的，它们之间有一些共性问题，例如：
 
@@ -162,7 +170,7 @@ Neo4j 提供了对Java、JavaScript、.Net、Python 和Go的商业支持。NEO4J
 
 可视化工具是否基于web从而能够更容易的访问？
 
-### 购买准则总结
+#### 购买准则总结
 
 - 开源基金和社区
 - 本地图存储
@@ -172,7 +180,17 @@ Neo4j 提供了对Java、JavaScript、.Net、Python 和Go的商业支持。NEO4J
 - 图形平台with Tools并且支持所有的用户
 - 商业模式、专注和持久力
 
+## 图计算
+
+### 图神经网络（Graph Neural Network, GNN）
+
+GNN用图数据作为输入，然后以特定的图的方式实现神经网络架构。
+
 ## 学习资源
 
 [基于图的欺诈检测论文及资源](https://github.com/safe-graph/graph-fraud-detection-papers)
+
+[Neo4j Graph Algorithms](https://neo4j.com/developer/graph-data-science/graph-algorithms/)
+
+
 
