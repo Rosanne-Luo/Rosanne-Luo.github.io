@@ -192,5 +192,7 @@ GNN用图数据作为输入，然后以特定的图的方式实现神经网络�
 
 [Neo4j Graph Algorithms](https://neo4j.com/developer/graph-data-science/graph-algorithms/)
 
+[欺诈检测论文及代码](https://paperswithcode.com/task/fraud-detection)
+
 
 
