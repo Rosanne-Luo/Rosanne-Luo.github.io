@@ -2,7 +2,7 @@
 layout: post
 title:  "北新建材简析（一）"
 subtitle: ""
-date: 2021-07-29
+date: 2021-05-29
 author: 七月
 category: 投资理财
 tags: 个股 其他建材 北新建材
