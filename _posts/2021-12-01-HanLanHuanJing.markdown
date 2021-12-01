@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "瀚蓝环境简析"
+title: "瀚蓝环境跟踪"
 subtitle: ""
 date: 2021-12-01
 author: 七月
