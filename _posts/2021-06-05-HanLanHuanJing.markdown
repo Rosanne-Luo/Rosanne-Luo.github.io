@@ -5,7 +5,7 @@ subtitle: ""
 date: 2021-06-05
 author: 七月
 category: 投资理财
-tags: 个股 环保工程及服务
+tags: 个股 环保工程及服务 瀚蓝环境
 finished: true
 ---
 
