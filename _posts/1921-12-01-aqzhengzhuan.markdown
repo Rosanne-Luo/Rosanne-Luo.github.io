@@ -5,7 +5,7 @@ subtitle: "所以我竟將我的短篇小說結集起來，而且付印了，又
 date: 1921-12-01
 author: "魯迅"
 category: books
-tags: chinese luxun nahan
+tags: 小说
 finished: true
 ---
 
