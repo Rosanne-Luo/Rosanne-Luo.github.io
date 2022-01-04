@@ -2,7 +2,7 @@
 layout: post
 title:  "风电产业链简析【收藏】"
 subtitle: ""
-date: 2021-12-14
+date: 2022-01-04
 author: 七月
 category: 投资理财
 tags: 行业  电力 
