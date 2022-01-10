@@ -11,7 +11,9 @@ finished: true
 
 时间：2016-2020
 
-原文链接：http://www.china.com.cn/lianghui/news/2016-03/17/content_38053101_21.htm
+原文链接：
+
+[中国国民经济和社会发展第十三个五年规划纲要]: http://www.china.com.cn/lianghui/news/2016-03/17/content_38053101_21.htm
 
 ## 第一篇 指导思想、主要目标和发展理念
 
@@ -19,7 +21,7 @@ finished: true
 
 **第一章 发展环境**
 
-![img](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/b8aeed9902c81854f85f15.jpg)
+![img](/img/b8aeed9902c81854f85f15.jpg)
 
 
 
@@ -43,7 +45,7 @@ finished: true
 
 （7）各方面制度更加成熟更加定型
 
-![img](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/b8aeed9902c81854f5ce4a.jpg)
+![img](/img/b8aeed9902c81854f5ce4a.jpg)
 
 
 
@@ -73,7 +75,7 @@ finished: true
 
 第四节 打造区域创新高地
 
-![img](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/b8aeed9902c81854f5ed4c.jpg)
+![img](/img/b8aeed9902c81854f5ed4c.jpg)
 
 **第七章 深入推进大众创业万众创新**
 
@@ -163,7 +165,7 @@ finished: true
 
 第四节 完善新兴产业发展环境
 
-![img](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img/b8aeed9902c81854f68555.jpg)
+![img](/img/b8aeed9902c81854f68555.jpg)
 
 **第二十四章 加快推动服务业优质高效发展**
 
