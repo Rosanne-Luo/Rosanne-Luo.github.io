@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      
-  {% include head.html %}
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
-
-  </head>
+  {%- include head.html -%}
 
   <body>
 
-  {% include header.html %}
+    {%- include views/header.html -%}
 
-  <div class="wrapper">
+    {%- include views/banner.html -%}
+
+    {%- include extensions/hashlocate.html -%}
+
+    {%- include extensions/theme-toggle.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
         {{ content }}
-  </div>
+      </div>
+    </main>
 
-</body>
+    {%- include views/footer.html -%}
 
-<foot>
-
-    {% include footer.html %}
-    {% include foot.html %}
-
-</foot>
-
+  </body>
 </html>
