@@ -80,6 +80,13 @@ finished: true
 
 ![image-20220408101117818](/Users/Rosanne/Documents/GitHub/Rosanne-Luo.github.io/img//image-20220408101117818.png)
 
+**存货**
+
+近两年存货的增长速度高于营收的增长速度。2021年存货上涨41%，公司的解释是主要由于报告期末原材料及产成品库存增加所致。
+
+
+![image-20220410222106871](D:/Project/github/Rosanne-Luo-io/Rosanne-Luo.github.io/img/image-20220410222106871.png)
+
 **产品分析**
 
 2021各业务利润占比
