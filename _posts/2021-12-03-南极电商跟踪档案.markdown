@@ -58,7 +58,7 @@ finished: true
 
 各季度营业数据如下：
 
-![image-20220423160819670](D:/Project/github/Rosanne-Luo-io/Rosanne-Luo.github.io/img/image-20220423160819670.png)
+![image-20220423160819670](/img/image-20220423160819670.png)
 
 
 
