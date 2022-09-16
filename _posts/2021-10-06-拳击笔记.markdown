@@ -5,7 +5,7 @@ subtitle: ""
 date: 2021-10-06
 author: 七月
 category: 生活
-tags: 生活 运动 拳击
+tags: 运动 拳击
 finished: false
 ---
 
