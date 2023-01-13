@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "同仁堂简析"
+title:  "每周新股（十三）同仁堂"
 subtitle: ""
 date: 2021-12-20
 author: 七月

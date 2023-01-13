@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "东阿阿胶简析"
+title:  "每周新股（十四）东阿阿胶"
 subtitle: ""
 date: 2021-12-22
 author: 七月

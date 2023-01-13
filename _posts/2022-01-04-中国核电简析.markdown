@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "中国核电简析"
+title:  "每周新股（十八）中国核电简析"
 subtitle: ""
 date: 2022-01-04
 author: 七月

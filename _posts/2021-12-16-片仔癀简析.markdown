@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "片仔癀简析"
+title:  "每周新股（十二）片仔癀"
 subtitle: ""
 date: 2021-12-16
 author: 七月

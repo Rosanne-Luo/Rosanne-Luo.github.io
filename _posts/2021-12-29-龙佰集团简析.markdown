@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "龙佰集团简析"
+title:  "每周新股（十六）龙佰集团简析"
 subtitle: ""
 date: 2021-12-29
 author: 七月

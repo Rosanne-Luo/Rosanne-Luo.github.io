@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "苏宁易购（002024）简析"
+title:  "每周新股（十一）苏宁易购"
 subtitle: ""
 date: 2021-10-07
 author: 七月
